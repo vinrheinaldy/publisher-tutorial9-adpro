@@ -17,3 +17,9 @@ URL "amqp://guest:guest@localhost:5672" adalah URL koneksi AMQP (Advanced Messag
 - Port: 5672
 
 Penggunaan URL amqp://guest:guest@localhost:5672 yang sama di publisher dan subscriber menunjukan bahwa publisher dan subscriber terhubung ke instance message broker yang sama. Hal ini diperlukan agar message broker dapat menerima pesan dari publisher dan mengirimkannya ke subscriber. Dengan kata lain, keduanya harus terhubung ke broker yang sama agar dapat berkomunikasi.
+
+</details>
+
+
+### RabbitMQ running in localhost
+![rabbitmqrunning](https://github.com/user-attachments/assets/f3900213-06ec-4d1d-bf97-5740c0553366)
