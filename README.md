@@ -27,3 +27,11 @@ Penggunaan URL amqp://guest:guest@localhost:5672 yang sama di publisher dan subs
 ### Screenshots
 ![Sending and receiving msgs](image/terminal.png)
 Saat perintah `cargo run` dijalankan di direktori `publisher`, program akan membuat lima `UserCreatedEventMessage` dan mengirimkannya ke message broker (RabbitMQ) melalui channel `user_created`.
+
+### Screenshots
+
+Berikut adalah halaman overview dari RabbitMQ setelah beberapa kali menjalankan publisher
+
+![Spikes on chart](image/ss2.png)
+
+Saya tidak menemukan grafik untuk message, dan juga saat saya spam berulang kali publisher queue tetap idle
