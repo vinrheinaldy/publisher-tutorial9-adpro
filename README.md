@@ -24,14 +24,22 @@ Penggunaan URL amqp://guest:guest@localhost:5672 yang sama di publisher dan subs
 ### RabbitMQ running in localhost
 ![rabbitmqrunning](image/rabbitmqrunning.png)
 
-### Screenshots
+### Screenshots 1
 ![Sending and receiving msgs](image/terminal.png)
 Saat perintah `cargo run` dijalankan di direktori `publisher`, program akan membuat lima `UserCreatedEventMessage` dan mengirimkannya ke message broker (RabbitMQ) melalui channel `user_created`.
 
-### Screenshots
+### Screenshots 2
 
 Berikut adalah halaman overview dari RabbitMQ setelah beberapa kali menjalankan publisher
 
 ![Spikes on chart](image/ss2.png)
 
 Saya tidak menemukan grafik untuk message, dan juga saat saya spam berulang kali publisher queue tetap idle
+
+### Screenshots 3
+
+Dalam simulasi ini, kita menambahkan delay `1 detik` (`thread::sleep(ten_millis)`) pada setiap proses pesan yang diterima oleh subscriber.
+
+![Spikes on chart2](image/ss3.png)
+
+Sama seperti sebelumnya tidak muncul grafik dan juga tidak menambahkan ke queue
