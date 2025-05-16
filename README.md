@@ -22,4 +22,4 @@ Penggunaan URL amqp://guest:guest@localhost:5672 yang sama di publisher dan subs
 
 
 ### RabbitMQ running in localhost
-![rabbitmqrunning](https://github.com/user-attachments/assets/f3900213-06ec-4d1d-bf97-5740c0553366)
+![rabbitmqrunning](image/rabbitmqrunning.png)
